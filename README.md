@@ -1,4 +1,4 @@
-# Mohamed El Mallhy — Portfolio
+# Mohamed El Mallahy — Portfolio
 
 A modern personal portfolio showcasing my work as a Frontend Developer & AI Enthusiast.
 
