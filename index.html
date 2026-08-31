@@ -1,0 +1,920 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Mohamed El Mallhy — Frontend Developer &amp; AI Enthusiast</title>
+    <meta
+      name="description"
+      content="Mohamed El Mallhy — Frontend Developer &amp; AI Enthusiast. I build digital experiences where design, code and AI meet."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+   <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
+  </head>
+  <body>
+    <!-- ================= CINEMATIC INTRO ================= -->
+    <div class="intro" id="intro">
+      <div class="intro__row">
+        <span class="intro__name-line">MOHAMED</span>
+      </div>
+      <div class="intro__row">
+        <span class="intro__name-line">EL MALLHY</span>
+      </div>
+      <div class="intro__row intro__row--sub">
+        <span class="intro__sub-line">FRONTEND DEVELOPER</span>
+        <span class="intro__sub-amp">&amp;</span>
+        <span class="intro__sub-line">AI ENTHUSIAST</span>
+      </div>
+      <div class="intro__bar">
+        <span class="intro__bar-fill" id="introFill"></span>
+      </div>
+    </div>
+
+    <!-- ================= CUSTOM CURSOR ================= -->
+    <div class="cursor" id="cursor">
+      <div class="cursor__ring" id="cursorRing"></div>
+      <div class="cursor__dot" id="cursorDot"></div>
+      <span class="cursor__label" id="cursorLabel">VIEW</span>
+    </div>
+
+    <!-- ================= SCROLL PROGRESS ================= -->
+    <div class="progress-rail">
+      <div class="progress-rail__fill" id="progressFill"></div>
+    </div>
+
+    <!-- ================= NAVIGATION ================= -->
+    <header class="nav" id="nav">
+      <div class="nav__inner">
+        <a href="#home" class="nav__logo" data-cursor="hover"
+          >M.E<span class="nav__logo-dot">.</span></a
+        >
+
+        <nav class="nav__links" aria-label="Primary">
+          <a
+            href="#home"
+            class="nav__link is-active"
+            data-section="home"
+            data-cursor="hover"
+            ><span>HOME</span></a
+          >
+          <a
+            href="#about"
+            class="nav__link"
+            data-section="about"
+            data-cursor="hover"
+            ><span>ABOUT</span></a
+          >
+          <a
+            href="#journey"
+            class="nav__link"
+            data-section="journey"
+            data-cursor="hover"
+            ><span>JOURNEY</span></a
+          >
+          <a
+            href="#skills"
+            class="nav__link"
+            data-section="skills"
+            data-cursor="hover"
+            ><span>SKILLS</span></a
+          >
+          <a
+            href="#work"
+            class="nav__link"
+            data-section="work"
+            data-cursor="hover"
+            ><span>WORK</span></a
+          >
+          <a
+            href="#github"
+            class="nav__link"
+            data-section="github"
+            data-cursor="hover"
+            ><span>GITHUB</span></a
+          >
+          <a
+            href="#contact"
+            class="nav__link"
+            data-section="contact"
+            data-cursor="hover"
+            ><span>CONTACT</span></a
+          >
+        </nav>
+
+        <button
+          class="nav__toggle"
+          id="navToggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span class="nav__toggle-line"></span>
+          <span class="nav__toggle-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ================= MOBILE MENU ================= -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu__inner">
+        <nav class="mobile-menu__links" aria-label="Mobile primary">
+          <a href="#home" class="mobile-menu__link"
+            ><span class="mobile-menu__index">01</span>HOME</a
+          >
+          <a href="#about" class="mobile-menu__link"
+            ><span class="mobile-menu__index">02</span>ABOUT</a
+          >
+          <a href="#journey" class="mobile-menu__link"
+            ><span class="mobile-menu__index">03</span>JOURNEY</a
+          >
+          <a href="#skills" class="mobile-menu__link"
+            ><span class="mobile-menu__index">04</span>SKILLS</a
+          >
+          <a href="#work" class="mobile-menu__link"
+            ><span class="mobile-menu__index">05</span>WORK</a
+          >
+          <a href="#github" class="mobile-menu__link"
+            ><span class="mobile-menu__index">06</span>GITHUB</a
+          >
+          <a href="#contact" class="mobile-menu__link"
+            ><span class="mobile-menu__index">07</span>CONTACT</a
+          >
+        </nav>
+        <div class="mobile-menu__footer">
+          <a
+            href="https://github.com/mohamedelmallhy-prog"
+            target="_blank"
+            rel="noopener"
+            >GITHUB</a
+          >
+          <a href="#" target="_blank" rel="noopener">LINKEDIN</a>
+        </div>
+      </div>
+    </div>
+
+    <main id="top">
+      <!-- ================= HERO ================= -->
+      <section class="hero" id="home">
+        <canvas class="hero__field" id="heroField"></canvas>
+        <div class="hero__grain" aria-hidden="true"></div>
+        <div class="hero__vignette"></div>
+
+        <div class="hero__inner">
+          <div class="hero__text">
+            <p class="hero__eyebrow" data-reveal>
+              FRONTEND DEVELOPER &amp; AI ENTHUSIAST
+            </p>
+
+            <h1 class="hero__headline">
+              <span class="hero__line" data-reveal-line
+                ><span class="hero__word">MOHAMED</span></span
+              >
+              <span class="hero__line" data-reveal-line
+                ><span class="hero__word hero__word--accent"
+                  >EL MALLAHY.</span
+                ></span
+              >
+            </h1>
+
+            <p class="hero__desc" data-reveal>
+              I build digital experiences where design, code and AI meet.
+            </p>
+
+            <div class="hero__ctas" data-reveal>
+              <a
+                href="#work"
+                class="btn btn--primary magnetic"
+                data-cursor="button"
+              >
+                <span class="btn__text">VIEW MY WORK</span>
+                <span class="btn__icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path
+                      d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5"
+                      stroke="currentColor"
+                      stroke-width="1.4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </a>
+              <a
+                href="#contact"
+                class="btn btn--ghost magnetic"
+                data-cursor="button"
+              >
+                <span class="btn__text">LET'S TALK</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__photo" id="heroPhoto">
+            <div class="hero__photo-mask" id="heroPhotoMask">
+              <img
+                src="mohamed.jpg"
+                alt="Mohamed El Mallhy"
+                class="hero__photo-img"
+                id="heroPhotoImg"
+              />
+              <div class="hero__photo-grain" aria-hidden="true"></div>
+            </div>
+            <span class="hero__photo-frame" aria-hidden="true"></span>
+            <span class="hero__photo-caption"
+              >MOHAMED EL MALLHY — CAIRO, EGYPT</span
+            >
+          </div>
+        </div>
+
+        <div class="hero__scroll" aria-hidden="true">
+          <span class="hero__scroll-track"
+            ><span class="hero__scroll-thumb"></span
+          ></span>
+          <span class="hero__scroll-text">SCROLL</span>
+        </div>
+      </section>
+
+      <!-- ================= ABOUT ================= -->
+      <section class="about" id="about">
+        <div class="section-head">
+          <span class="section-head__eyebrow">01 / ABOUT</span>
+          <span class="section-head__rule"></span>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__col about__col--lead">
+            <h2 class="about__title" data-split-lines>
+              I build to learn.<br />I learn to build better.
+            </h2>
+          </div>
+
+          <div class="about__col about__col--body">
+            <p class="about__paragraph" data-reveal>
+              I'm a frontend developer who spends most of his time turning ideas
+              into real, working interfaces — not just mockups. My focus is
+              modern UI, responsive layouts and JavaScript-driven interaction,
+              with React where the project calls for it.
+            </p>
+            <p class="about__paragraph" data-reveal>
+              Motion is part of how I think about interfaces, not decoration
+              added at the end — which is why GSAP shows up throughout this
+              site, not just in a skills list. Lately I've also been exploring
+              AI: how it fits into frontend workflows, and how it can become
+              part of the products I build rather than a separate tool on the
+              side.
+            </p>
+
+            <div class="about__stats">
+              <div class="stat">
+                <span class="stat__value" data-count="4" data-suffix="+"
+                  >0</span
+                >
+                <span class="stat__label">Projects Built</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value" data-count="100" data-suffix="%"
+                  >0</span
+                >
+                <span class="stat__label">Hands-On Learning</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value" data-count="1" data-suffix="">0</span>
+                <span class="stat__label">Continuous Journey</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= JOURNEY ================= -->
+      <section class="journey" id="journey">
+        <div class="section-head">
+          <span class="section-head__eyebrow">02 / JOURNEY</span>
+          <span class="section-head__rule"></span>
+        </div>
+
+        <div class="journey__rail" id="journeyRail">
+          <div class="journey__spine" aria-hidden="true">
+            <span class="journey__spine-fill" id="journeyFill"></span>
+          </div>
+
+          <div class="journey__stage" data-journey-stage>
+            <span class="journey__marker">01</span>
+            <h3 class="journey__label">LEARNING</h3>
+            <p class="journey__text">
+              Started with the fundamentals — HTML, CSS and JavaScript —
+              building small pages to understand how the browser actually works
+              before reaching for any framework.
+            </p>
+          </div>
+
+          <div class="journey__stage" data-journey-stage>
+            <span class="journey__marker">02</span>
+            <h3 class="journey__label">BUILDING</h3>
+            <p class="journey__text">
+              Moved into real projects — e-commerce flows, booking interfaces,
+              content platforms — where responsive design and interaction had to
+              hold up under actual use.
+            </p>
+          </div>
+
+          <div class="journey__stage" data-journey-stage>
+            <span class="journey__marker">03</span>
+            <h3 class="journey__label">EXPERIMENTING</h3>
+            <p class="journey__text">
+              Started pushing further into motion and detail — GSAP,
+              ScrollTrigger, custom interactions — treating the interface itself
+              as something worth crafting, not just styling.
+            </p>
+          </div>
+
+          <div class="journey__stage" data-journey-stage>
+            <span class="journey__marker">04</span>
+            <h3 class="journey__label">AI</h3>
+            <p class="journey__text">
+              Currently exploring how AI fits into frontend work — from
+              AI-assisted tooling to building interfaces that integrate AI
+              features directly into the product.
+            </p>
+          </div>
+
+          <div class="journey__stage" data-journey-stage>
+            <span class="journey__marker">05</span>
+            <h3 class="journey__label">NEXT</h3>
+            <p class="journey__text">
+              Still learning in public — the next technology, the next project,
+              the next thing worth building. This site is designed to grow
+              alongside that.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SKILLS ================= -->
+      <section class="skills" id="skills">
+        <div class="section-head">
+          <span class="section-head__eyebrow">03 / SKILLS</span>
+          <span class="section-head__rule"></span>
+        </div>
+
+        <ul class="skills__grid" id="skillsGrid">
+          <li class="skill" data-skill>
+            <span class="skill__index">01</span
+            ><span class="skill__name">HTML</span
+            ><span class="skill__tag">MARKUP</span>
+          </li>
+          <li class="skill" data-skill>
+            <span class="skill__index">02</span
+            ><span class="skill__name">CSS</span
+            ><span class="skill__tag">STYLE</span>
+          </li>
+          <li class="skill" data-skill>
+            <span class="skill__index">03</span
+            ><span class="skill__name">JavaScript</span
+            ><span class="skill__tag">LOGIC</span>
+          </li>
+          <li class="skill" data-skill>
+            <span class="skill__index">04</span
+            ><span class="skill__name">React</span
+            ><span class="skill__tag">UI</span>
+          </li>
+          <!-- <li class="skill" data-skill>
+            <span class="skill__index">05</span
+            ><span class="skill__name">GSAP</span
+            ><span class="skill__tag">MOTION — SEE THIS PAGE</span>
+          </li> -->
+          <!-- <li class="skill" data-skill>
+            <span class="skill__index">06</span
+            ><span class="skill__name">jQuery</span
+            ><span class="skill__tag">DOM / FILTERING</span>
+          </li> -->
+          <li class="skill" data-skill>
+            <span class="skill__index">07</span
+            ><span class="skill__name">Git &amp; GitHub</span
+            ><span class="skill__tag">VERSION CONTROL</span>
+          </li>
+          <li class="skill" data-skill>
+            <span class="skill__index">08</span
+            ><span class="skill__name">Responsive Design</span
+            ><span class="skill__tag">LAYOUT</span>
+          </li>
+          <li class="skill" data-skill>
+            <span class="skill__index">09</span
+            ><span class="skill__name">API Integration</span
+            ><span class="skill__tag">DATA</span>
+          </li>
+          <li class="skill" data-skill>
+            <span class="skill__index">10</span
+            ><span class="skill__name">AI Integration</span
+            ><span class="skill__tag">CURRENT FOCUS</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ================= SELECTED WORK ================= -->
+      <section class="work" id="work">
+        <div class="section-head">
+          <span class="section-head__eyebrow">04 / SELECTED WORK</span>
+          <span class="section-head__rule"></span>
+        </div>
+
+        <div class="work__intro">
+          <p class="work__subtitle" data-reveal>
+            Things I've built while learning, experimenting and pushing myself
+            further.
+          </p>
+
+          <div
+            class="work__filters"
+            id="workFilters"
+            role="tablist"
+            aria-label="Filter projects"
+          >
+            <button
+              class="filter is-active"
+              data-filter="all"
+              role="tab"
+              aria-selected="true"
+            >
+              ALL
+            </button>
+            <button
+              class="filter"
+              data-filter="frontend"
+              role="tab"
+              aria-selected="false"
+            >
+              FRONTEND
+            </button>
+            <button
+              class="filter"
+              data-filter="javascript"
+              role="tab"
+              aria-selected="false"
+            >
+              JAVASCRIPT
+            </button>
+            <button
+              class="filter"
+              data-filter="ui"
+              role="tab"
+              aria-selected="false"
+            >
+              UI
+            </button>
+            <button
+              class="filter"
+              data-filter="ai"
+              role="tab"
+              aria-selected="false"
+            >
+              AI
+            </button>
+            <button
+              class="filter"
+              data-filter="experiments"
+              role="tab"
+              aria-selected="false"
+            >
+              EXPERIMENTS
+            </button>
+          </div>
+        </div>
+
+        <div class="work__list" id="workList">
+          <article
+            class="case"
+            data-case
+            data-preview="1"
+            data-categories="frontend ui"
+          >
+            <a href="#" class="case__row" data-cursor="project">
+              <span class="case__number">01</span>
+              <div class="case__main">
+                <span class="case__meta">E-COMMERCE EXPERIENCE — 2025</span>
+                <h3 class="case__title">Tasawoqi</h3>
+              </div>
+              <div class="case__tags">
+                <span>JavaScript</span><span>Responsive UI</span
+                ><span>Cart Flow</span>
+              </div>
+              <span class="case__arrow" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path
+                    d="M5 17L17 5M17 5H8M17 5V14"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </a>
+            <div class="case__body">
+              <div class="case__col">
+                <span class="case__label">WHAT I BUILT</span>
+                <p>
+                  A frontend e-commerce experience — product browsing, a working
+                  cart flow and a responsive interface built to feel natural on
+                  any screen size.
+                </p>
+              </div>
+              <div class="case__col">
+                <span class="case__label">CHALLENGE</span>
+                <p>
+                  Keeping browsing and cart interactions fast and predictable
+                  using JavaScript, without leaning on a framework to carry the
+                  UI.
+                </p>
+              </div>
+              <div class="case__col">
+                <span class="case__label">TECHNOLOGIES</span>
+                <p>HTML, CSS, JavaScript</p>
+              </div>
+              <div class="case__links">
+                <a
+                  href="https://github.com/mohamedelmallhy-prog"
+                  target="_blank"
+                  rel="noopener"
+                  data-cursor="hover"
+                  >VIEW ON GITHUB →</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="case case--reverent"
+            data-case
+            data-preview="2"
+            data-categories="frontend ui"
+          >
+            <a href="#" class="case__row" data-cursor="project">
+              <span class="case__number">02</span>
+              <div class="case__main">
+                <span class="case__meta"
+                  >MEANINGFUL DIGITAL PLATFORM — 2025</span
+                >
+                <h3 class="case__title">Noor Quran</h3>
+              </div>
+              <div class="case__tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <span class="case__arrow" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path
+                    d="M5 17L17 5M17 5H8M17 5V14"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </a>
+            <div class="case__body">
+              <div class="case__col">
+                <span class="case__label">WHAT I BUILT</span>
+                <p>
+                  A Quran platform built with a simple goal: make the content
+                  easy to reach and pleasant to read, with a calm, respectful
+                  interface that stays out of the way.
+                </p>
+              </div>
+              <div class="case__col">
+                <span class="case__label">WHY IT MATTERS</span>
+                <p>
+                  This one wasn't built for a portfolio line — it's an
+                  ongoing-good project, and the design choices followed that:
+                  clarity and calm over flash.
+                </p>
+              </div>
+              <div class="case__col">
+                <span class="case__label">TECHNOLOGIES</span>
+                <p>HTML, CSS, JavaScript</p>
+              </div>
+              <div class="case__links">
+                <a
+                  href="https://github.com/mohamedelmallhy-prog"
+                  target="_blank"
+                  rel="noopener"
+                  data-cursor="hover"
+                  >VIEW ON GITHUB →</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="case"
+            data-case
+            data-preview="3"
+            data-categories="frontend javascript ui"
+          >
+            <a href="#" class="case__row" data-cursor="project">
+              <span class="case__number">03</span>
+              <div class="case__main">
+                <span class="case__meta"
+                  >APPOINTMENT BOOKING EXPERIENCE — 2025</span
+                >
+                <h3 class="case__title">Rendezvous</h3>
+              </div>
+              <div class="case__tags">
+                <span>JavaScript</span><span>UX Flow</span
+                ><span>Responsive UI</span>
+              </div>
+              <span class="case__arrow" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path
+                    d="M5 17L17 5M17 5H8M17 5V14"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </a>
+            <div class="case__body">
+              <div class="case__col">
+                <span class="case__label">WHAT I BUILT</span>
+                <p>
+                  A modern appointment booking interface — focused on a clear
+                  step-by-step flow so choosing a date and time never feels
+                  confusing.
+                </p>
+              </div>
+              <div class="case__col">
+                <span class="case__label">CHALLENGE</span>
+                <p>
+                  Designing a booking flow that stays simple on mobile without
+                  cutting down on the information a user needs to book
+                  confidently.
+                </p>
+              </div>
+              <div class="case__col">
+                <span class="case__label">TECHNOLOGIES</span>
+                <p>HTML, CSS, JavaScript</p>
+              </div>
+              <div class="case__links">
+                <a
+                  href="https://github.com/mohamedelmallhy-prog"
+                  target="_blank"
+                  rel="noopener"
+                  data-cursor="hover"
+                  >VIEW ON GITHUB →</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="case"
+            data-case
+            data-preview="4"
+            data-categories="ai experiments javascript"
+          >
+            <a href="#" class="case__row" data-cursor="project">
+              <span class="case__number">04</span>
+              <div class="case__main">
+                <span class="case__meta">EXPERIMENTS — ONGOING</span>
+                <h3 class="case__title">AI / Experiments</h3>
+              </div>
+              <div class="case__tags">
+                <span>AI Integration</span><span>JavaScript</span
+                ><span>APIs</span>
+              </div>
+              <span class="case__arrow" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                  <path
+                    d="M5 17L17 5M17 5H8M17 5V14"
+                    stroke="currentColor"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </a>
+            <div class="case__body">
+              <div class="case__col">
+                <span class="case__label">WHAT THIS IS</span>
+                <p>
+                  A running space for smaller builds where I test how AI can
+                  plug into frontend interfaces — not polished products, but
+                  real experiments.
+                </p>
+              </div>
+              <div class="case__col">
+                <span class="case__label">WHAT I'M LEARNING</span>
+                <p>
+                  How to connect AI APIs to a UI in a way that feels considered
+                  rather than bolted on.
+                </p>
+              </div>
+              <div class="case__col">
+                <span class="case__label">TECHNOLOGIES</span>
+                <p>JavaScript, APIs</p>
+              </div>
+              <div class="case__links">
+                <a
+                  href="https://github.com/mohamedelmallhy-prog"
+                  target="_blank"
+                  rel="noopener"
+                  data-cursor="hover"
+                  >VIEW ON GITHUB →</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="project-preview" id="projectPreview" aria-hidden="true">
+          <div class="project-preview__inner" id="projectPreviewInner"></div>
+        </div>
+      </section>
+
+      <!-- ================= GITHUB ================= -->
+      <section class="gh" id="github">
+        <div class="section-head">
+          <span class="section-head__eyebrow">05 / GITHUB</span>
+          <span class="section-head__rule"></span>
+        </div>
+
+        <div class="gh__inner">
+          <h2 class="gh__title" data-split-lines>
+            MY CODE.<br />MY PROJECTS.<br />MY LEARNING.
+          </h2>
+
+          <a
+            href="https://github.com/mohamedelmallhy-prog"
+            target="_blank"
+            rel="noopener"
+            class="btn btn--ghost magnetic"
+            data-cursor="button"
+            data-reveal
+          >
+            <span class="btn__text">EXPLORE MY GITHUB</span>
+            <span class="btn__icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </a>
+
+          <div class="gh__repos" id="ghRepos" data-reveal>
+            <p class="gh__state" id="ghState">Loading recent repositories…</p>
+            <ul class="gh__list" id="ghList" hidden></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+      <section class="contact" id="contact">
+        <div class="contact__inner">
+          <span class="section-head__eyebrow section-head__eyebrow--center"
+            >06 / CONTACT</span
+          >
+
+          <h2 class="contact__title" data-split-lines>
+            LET'S BUILD<br />SOMETHING GREAT.
+          </h2>
+          <p class="contact__desc" data-reveal>
+            Have an idea, project or collaboration in mind?
+          </p>
+
+          <a
+            href="mailto:mohamedelmallhy@gmail.com"
+            class="btn btn--primary btn--large magnetic"
+            data-cursor="button"
+            data-reveal
+          >
+            <span class="btn__text">START A CONVERSATION</span>
+            <span class="btn__icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+          </a>
+
+          <button
+            class="contact__email"
+            id="copyEmail"
+            data-cursor="hover"
+            data-reveal
+            data-email="mohamedelmallhy@gmail.com
+"
+          >
+            mohamedelmallhy@gmail.com
+          </button>
+          <span class="contact__toast" id="emailToast"
+            >Copied to clipboard</span
+          >
+
+          <div class="contact__socials" data-reveal>
+            <a
+              href="https://github.com/mohamedelmallhy-prog"
+              target="_blank"
+              rel="noopener"
+              data-cursor="hover"
+              >GITHUB</a
+            >
+            <a href="#" target="_blank" rel="noopener" data-cursor="hover"
+              >LINKEDIN</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__logo"
+            >MOHAMED EL MALLHY<span class="nav__logo-dot">.</span></span
+          >
+          <span class="footer__role"
+            >Frontend Developer &amp; AI Enthusiast</span
+          >
+        </div>
+
+        <div class="footer__socials">
+          <a
+            href="https://github.com/mohamedelmallhy-prog"
+            target="_blank"
+            rel="noopener"
+            data-cursor="hover"
+            >GitHub</a
+          >
+          <a href="#" target="_blank" rel="noopener" data-cursor="hover"
+            >LinkedIn</a
+          >
+        </div>
+
+        <div class="footer__meta">
+          <span>© 2026 Mohamed El Mallahy</span>
+          <button
+            class="footer__top"
+            id="backToTop"
+            aria-label="Back to top"
+            data-cursor="hover"
+          >
+            <span>TOP</span>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path
+                d="M6 10V2M6 2L2 6M6 2L10 6"
+                stroke="currentColor"
+                stroke-width="1.3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+ <!-- WhatsApp Floating Button -->
+<a
+  href="https://wa.me/201098428049"
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Chat on WhatsApp"
+>
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
