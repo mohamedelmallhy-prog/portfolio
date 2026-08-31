@@ -34,4 +34,4 @@ WhatsApp: +20 109 842 8049
 
 ---
 
-© 2026 Mohamed El Mallhy
+© 2026 Mohamed El Mallahy
